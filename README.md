@@ -1,8 +1,9 @@
 # Data-Structures
 
 Implementing various data structures using basic python and unittest
-	arrays - built-in
-	counter - counter_obj.py
+
+arrays - built-in
+counter - counter_obj.py
 	
 	TO DO
 		linked lists
