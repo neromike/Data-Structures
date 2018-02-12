@@ -8,7 +8,7 @@ class counter_obj(object):
 	
 	tally_count = 0
 	
-	def __init__(self):	#O(1)
+	def __init__(self):
 		"""Initializes the instance's curr_count to zero."""
 		self.curr_count = 0
 	
