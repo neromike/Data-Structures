@@ -16,7 +16,7 @@ class stack_obj(object):
 			self.data = this_data
 	
 	def __init__(self):
-		"""Initializes the instance's linked list with a root set to None."""
+		"""Initializes the instance's stack with a root set to None."""
 		self.root = None
 	
 	def push(self, this_data):	#O(1)
