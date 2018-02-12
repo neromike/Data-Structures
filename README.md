@@ -3,7 +3,8 @@
 Implementing various data structures using basic python and unittest
 - [x]arrays - built-in
 - [x]counter - counter_obj.py
-- [ ]linked lists
+- [x]singly linked lists
+- [ ]doubly linked lists
 - [ ]stacks
 - [ ]queues
 - [ ]hash-sets

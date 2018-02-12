@@ -8,18 +8,18 @@ class counter_obj(object):
 	
 	tally_count = 0
 	
-	def __init__(self):
+	def __init__(self):	#O(1)
 		"""Initializes the instance's curr_count to zero."""
 		self.curr_count = 0
 	
-	def increment (self):
-		"""Increments the instance's curr_count by one."""
+	def increment (self):	#O(1)
+		"""Increments the instance's curr_count by one. Runs at O(1)."""
 		self.curr_count += 1
 		counter_obj.tally_count += 1
 		return
 	
-	def to_string(self):
-		"""Returns the instance's curr_oount as a string"""
+	def to_string(self):	#O(1)
+		"""Returns the instance's curr_oount as a string. Runs at O(1)."""
 		return str(self.curr_count)
 
 
@@ -36,6 +36,5 @@ class test_counter(unittest.TestCase):
 		self.assertEqual(self.this_counter.curr_count, 2)
 	def test_tally_count(self):
 		self.assertEqual(self.this_counter.tally_count, 3)
-	
 if __name__ == '__main__':
 	unittest.main()
