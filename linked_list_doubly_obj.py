@@ -1,6 +1,6 @@
 class linked_list_doubly_obj(object):
 	"""
-	linked_list_double_obj is a class that supports:
+	linked_list_singly_obj is a class that creates a doubly linked list and supports:
 		add_to_head - an instance method to add a new node to the head of the linked list.
 		add_to_tail - an instance method to add a new node to the tail of the linked list.
 		remove_from_head - an instance method to remove the head node from the linked list.
