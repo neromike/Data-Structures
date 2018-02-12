@@ -14,7 +14,6 @@ class linked_list_singly_obj(object):
 		def __init__ (self, this_data=None):
 			self.next = None
 			self.data = this_data
-			return
 	
 	def __init__(self):
 		"""Initializes the instance's linked list with a root set to None."""
