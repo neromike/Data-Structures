@@ -53,7 +53,7 @@ class stack_obj(object):
 		return self.root == None
 		
 	def get_length(self):	#O(n)
-		"""Returns the length of the stacks. Runs at O(n)."""
+		"""Returns the length of the stack. Runs at O(n)."""
 		this_len = 0
 		this_node = self.root
 		if this_node == None:	#edge case = empty stack
