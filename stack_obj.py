@@ -1,6 +1,6 @@
 class stack_obj(object):
 	"""
-	linked_list_singly_obj is a class that creates a stack (LIFO) and supports:
+	stack_obj is a class that creates a stack (LIFO) and supports:
 		push - an instance method to add a new node to the head of the stack.
 		pop - an instance method to return the value from the first node of the stack, and remove it.
 		peek - an instance method to return the value from the first node of the stack.
