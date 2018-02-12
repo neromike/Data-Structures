@@ -10,7 +10,7 @@ class linked_list_singly_obj(object):
 	"""
 	
 	class node_obj(object):
-		"""The node for each item contains a link to the "next" node as well as a "data" payload."""
+		"""The node for each item contains a link to the "next" node as well as a "data" payload. If no data is passed, then payload is set to None."""
 		def __init__ (self, this_data=None):
 			self.next = None
 			self.data = this_data
