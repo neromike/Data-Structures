@@ -6,7 +6,7 @@ Implementing various data structures using basic python and unittest
 - [x]singly linked lists - linked_list_singly_obj.py
 - [x]doubly linked lists - linked_list_doubly_obj.py
 - [x]stacks - stack_obj.py
-- [ ]queues
+- [x]queues - queue_obj.py
 - [ ]hash-sets
 - [ ]hash-maps
 - [ ]hash-tables
