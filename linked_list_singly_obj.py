@@ -20,14 +20,14 @@ class linked_list_singly_obj(object):
 		self.root = None
 	
 	def add_to_head(self, this_data):	#O(1)
-		"""Gets passed this_data and sets it to the head of the linked list. Runs at O(1)."""
+		"""Gets passed "this_data" and sets it to the head of the linked list. Runs at O(1)."""
 		this_node = linked_list_singly_obj.node_obj(this_data)
 		this_node.next = self.root
 		self.root = this_node
 		return
 	
 	def add_to_tail(self, this_data):	#O(n)
-		"""Gets passes this_data and sets it to the tail of the linked list. Runs at O(n)."""
+		"""Gets passed "this_data" and sets it to the tail of the linked list. Runs at O(n)."""
 		this_new_node = linked_list_singly_obj.node_obj(this_data)
 		this_node = self.root
 		if this_node == None:	#edge case = empty linked list so passed data will be root
@@ -92,7 +92,11 @@ class linked_list_singly_obj(object):
 		return this_len
 	
 	def return_values(self):	#O(n)
-		"""Returns the values of the linked list in an ordered list from head to tail. Runs at O(n)."""
+		"""
+		Returns the values of the linked list in an ordered list from head to tail.
+		Returns None if an empty linked list.
+		Runs at O(n).
+		"""
 		data_list = []
 		this_node = self.root
 		if this_node == None:
