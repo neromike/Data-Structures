@@ -12,7 +12,7 @@ class counter_obj(object):
 		"""Initializes the instance's curr_count to zero."""
 		self.curr_count = 0
 	
-	def increment (self):	#O(1)
+	def increment(self):	#O(1)
 		"""Increments the instance's curr_count by one. Runs at O(1)."""
 		self.curr_count += 1
 		counter_obj.tally_count += 1
