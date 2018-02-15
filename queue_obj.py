@@ -1,6 +1,6 @@
 class queue_obj(object):
 	"""
-	queue_obj is a class that creates a queue (FIFO) and supports:
+	queue_obj is a class that creates a queue (FIFO; standing in line) and supports:
 		add - an instance method to add a new node to the end of the queue.
 		remove - an instance method to return the value from the first node of the queue, and remove it.
 		peek - an instance method to return the value from the first node of the queue.
