@@ -110,6 +110,21 @@ class linked_list_singly_obj(object):
 				this_node = this_node.next
 				data_list.append(this_node.data)
 		return data_list
+	
+	def exists(self, value):	#O(n)
+		"""Returns True if value exists in linked list. False otherwise. Runs at O(n)."""
+		this_node = self.root
+		if this_node.data == value:
+			return True
+		traversed_list = False
+		while not traversed_list:
+			if this_node.next == None:
+				return False
+			else:
+				this_node = this_node.next
+				if this_node.data == value:
+					return True
+		return
 
 
 import unittest
@@ -147,5 +162,9 @@ class test_linked_list_singly(unittest.TestCase):
 		self.assertEqual(self.this_list.get_length(), 1, 'incorrect get_length with one element list')
 		self.this_list.add_to_tail(4)
 		self.assertEqual(self.this_list.get_length(), 2, 'incorrect get_length with more than one element')
+	def test_exists(self):
+		self.this_list.add_to_head(3)
+		self.assertEqual(self.this_list.exists(3), True, 'exists returning False for value in list')
+		self.assertEqual(self.this_list.exists(4), False, 'exists returning True for value not in list')
 if __name__ == '__main__':
     unittest.main()
