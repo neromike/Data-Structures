@@ -1,25 +1,25 @@
 class counter_obj(object):
 	"""
-	counter_obj ix a class that supports:
+	counter_obj is a class that supports:
 		tally_count - a class variable for total number of increments
 		increment - an instance method to increment an instance variable (curr_count)
 		to_string - an instance method to return the increment counter as a string
 	"""
-	
+
 	tally_count = 0
-	
+
 	def __init__(self):
 		"""Initializes the instance's curr_count to zero."""
 		self.curr_count = 0
-	
+
 	def increment(self):	#O(1)
 		"""Increments the instance's curr_count by one. Runs at O(1)."""
 		self.curr_count += 1
 		counter_obj.tally_count += 1
 		return
-	
+
 	def to_string(self):	#O(1)
-		"""Returns the instance's curr_oount as a string. Runs at O(1)."""
+		"""Returns the instance's curr_count as a string. Runs at O(1)."""
 		return str(self.curr_count)
 
 
